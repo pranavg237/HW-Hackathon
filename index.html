@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ECE Hardware Hackathon · UIUC</title>
+  <meta name="description" content="A hardware hackathon at the University of Illinois Urbana-Champaign, hosted by the ECE registered student organizations." />
+  <meta name="theme-color" content="#0b1210" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a class="logo" id="logo" href="#top">ECE<span>/</span>HACK</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-discord btn-sm" id="nav-discord" href="#discord">Join Discord</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <img class="traces" src="assets/traces.svg" alt="" aria-hidden="true" />
+    <div class="wrap" id="hero-content"></div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="wrap">
+        <p class="eyebrow mono">About</p>
+        <h2 id="about-title"></h2>
+        <p class="section-lede" id="about-body"></p>
+        <div class="grid" id="about-features"></div>
+        <div class="stats" id="about-stats"></div>
+      </div>
+    </section>
+
+    <section id="tracks" class="alt">
+      <div class="wrap">
+        <p class="eyebrow mono">Tracks</p>
+        <h2>Pick a direction (or ignore them all).</h2>
+        <p class="section-lede">Every project is eligible for the overall prize. Tracks give you a theme to aim at and an extra shot at winning.</p>
+        <div class="grid" id="tracks-grid"></div>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <div class="wrap">
+        <p class="eyebrow mono">Schedule</p>
+        <h2>The weekend at a glance</h2>
+        <div class="schedule" id="schedule-grid"></div>
+        <p class="note" id="schedule-note"></p>
+      </div>
+    </section>
+
+    <section id="faq" class="alt">
+      <div class="wrap">
+        <p class="eyebrow mono">FAQ</p>
+        <h2>Questions</h2>
+        <div id="faq-list"></div>
+      </div>
+    </section>
+
+    <section id="discord">
+      <div class="wrap">
+        <div class="discord-panel">
+          <div>
+            <p class="eyebrow mono">Community</p>
+            <h2>Join us on Discord</h2>
+            <p>Announcements, registration updates, team finding, and Q&amp;A with organizers all happen here. It's the best way to stay in the loop.</p>
+          </div>
+          <div id="discord-cta"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hosts">
+      <div class="wrap">
+        <p class="eyebrow mono">Hosted by</p>
+        <h2>The ECE RSOs at UIUC</h2>
+        <p class="section-lede">Organized by student organizations in the Grainger College of Engineering's Department of Electrical &amp; Computer Engineering.</p>
+        <div class="hosts" id="hosts-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span id="footer-text"></span>
+      <a id="footer-discord" href="#discord">Discord</a>
+    </div>
+  </footer>
+
+  <noscript>
+    <p style="text-align:center;padding:20px;color:#9bb3a8">This site needs JavaScript to display event details.</p>
+  </noscript>
+
+  <!-- Content lives in config.js; main.js renders it. -->
+  <script src="src/config.js"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>
